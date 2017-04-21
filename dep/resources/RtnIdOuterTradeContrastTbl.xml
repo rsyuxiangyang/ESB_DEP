@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gbk" ?>
+<Content>
+    <!-- <Id>SBS</Id>
+    <Name>核心记账系统</Name>
+    <Remark>0开头的：交易成功；1开头的：交易失败；2开头的：交易结果不明。对于非0和1开头的，都是2开头的。</Remark>-->
+    <type>
+        <RtnId>0000</RtnId>
+        <RtnRemark>T,W开头的：交易成功。</RtnRemark>
+        <Recvs>T___,W___</Recvs>
+    </type>
+    <type>
+        <RtnId>1001</RtnId>
+        <RtnRemark>SBS直接外联银行,对待支付结果,不能够直接回应的,需外联查询结果返回的交易</RtnRemark>
+        <Recvs>WB02</Recvs>
+    </type>
+    <type>
+        <RtnId>2000</RtnId>
+        <RtnRemark>2开头的：交易结果不明。</RtnRemark>
+        <Recvs></Recvs>
+    </type>
+</Content>
